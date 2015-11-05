@@ -1,0 +1,31 @@
+{
+	"pattrstorage" : 	{
+		"name" : "masi.reverb",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"dampening" : [ 0.5 ],
+					"diffusion" : [ 0.75 ],
+					"level" : [ -12.0 ],
+					"size" : [ 0.5 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"dampening" : [ 0.5 ],
+					"diffusion" : [ 0.75 ],
+					"level" : [ -0.002957 ],
+					"size" : [ 0.5 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
