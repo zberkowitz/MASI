@@ -65,7 +65,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 13.0, 317.0, 350.0, 102.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 279.0, 352.75, 101.0 ],
+					"presentation_rect" : [ 17.0, 279.0, 352.75, 101.0 ],
 					"varname" : "reverb",
 					"viewvisibility" : 1
 				}
@@ -121,7 +121,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 520.0, 187.0, 145.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 242.125, 238.0, 122.5, 33.0 ],
+					"presentation_rect" : [ 249.125, 225.0, 118.75, 33.0 ],
 					"style" : "",
 					"text" : "Load Composition",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -164,7 +164,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 408.0, 187.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 242.125, 194.0, 118.75, 33.0 ],
+					"presentation_rect" : [ 249.125, 182.0, 118.75, 33.0 ],
 					"style" : "",
 					"text" : "Set Composition",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -450,8 +450,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -460,8 +460,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -493,7 +493,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 227.0, 12.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 226.5, 110.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 233.5, 110.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Reference Distance",
 					"textjustification" : 1
@@ -516,7 +516,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 13.0, 46.0, 221.0, 263.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 221.0, 261.0 ],
+					"presentation_rect" : [ 17.0, 10.0, 221.0, 261.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -537,7 +537,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 256.0, 148.5, 115.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.0, 10.0, 115.0, 61.0 ],
+					"presentation_rect" : [ 251.0, 10.0, 115.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -567,7 +567,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 261.0, 81.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 276.5, 137.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 283.5, 137.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -789,10 +789,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-29" : [ "dampening", "damp", 0 ],
 			"obj-2::obj-26" : [ "size", "size", 0 ],
 			"obj-2::obj-30" : [ "diffusion", "diff", 0 ],
-			"obj-2::obj-33" : [ "level", "level", 0 ]
+			"obj-2::obj-33" : [ "level", "level", 0 ],
+			"obj-2::obj-29" : [ "dampening", "damp", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -972,8 +972,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -982,8 +982,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
