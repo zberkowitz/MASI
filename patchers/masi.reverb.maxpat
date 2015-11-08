@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 105.0, 445.0, 354.0, 101.0 ],
+		"rect" : [ 117.0, 324.0, 214.0, 101.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -68,13 +68,13 @@
 					"restore" : 					{
 						"dampening" : [ 0.5 ],
 						"diffusion" : [ 0.75 ],
-						"level" : [ -11.957527 ],
+						"level" : [ -12.0 ],
 						"size" : [ 0.5 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u435015168"
+					"varname" : "u550003933"
 				}
 
 			}
@@ -88,7 +88,7 @@
 					"patching_rect" : [ 16.00001, 72.0, 100.0, 40.0 ],
 					"pattrstorage" : "masi.reverb",
 					"presentation" : 1,
-					"presentation_rect" : [ 227.0, 2.5, 100.0, 17.0 ],
+					"presentation_rect" : [ 142.0, 24.0, 16.0, 66.0 ],
 					"style" : ""
 				}
 
@@ -128,7 +128,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 68.0, 370.0, 173.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.5, 0.0, 79.0, 22.0 ],
+					"presentation_rect" : [ 49.5, 0.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "Reverb",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -191,7 +191,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 586.0, 32.0, 39.0, 92.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 305.0, 24.0, 30.0, 67.0 ],
+					"presentation_rect" : [ 106.0, 24.0, 30.0, 67.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -222,7 +222,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 481.0, 32.0, 39.0, 92.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 211.0, 24.0, 30.0, 67.0 ],
+					"presentation_rect" : [ 74.0, 24.0, 30.0, 67.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -253,7 +253,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 387.0, 32.0, 39.0, 92.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 107.0, 24.0, 30.0, 67.0 ],
+					"presentation_rect" : [ 42.0, 24.0, 30.0, 67.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -377,7 +377,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 343.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 352.0, 99.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 172.0, 99.0 ],
 					"rounded" : 0,
 					"style" : ""
 				}
@@ -955,93 +955,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-29" : [ "dampening", "damp", 0 ],
-			"obj-26" : [ "size", "size", 0 ],
-			"obj-33" : [ "level", "level", 0 ],
-			"obj-30" : [ "diffusion", "diff", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "hoa.fx.freeverb~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.args.map.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.mode.sel.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.help.process.infos.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/helputility",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.receive~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.fx.gain~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.list.sel.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.send~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "masi.reverb.json",
-				"bootpath" : "~/Documents/Max 7/Packages/MASI/misc/presets",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.process~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.in~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.out~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "c.freeverb~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.thisprocess~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.in.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"embedsnapshot" : 0,
 		"styles" : [ 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
@@ -1063,8 +976,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

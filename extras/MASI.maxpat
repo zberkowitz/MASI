@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 65.0, 79.0, 385.0, 389.0 ],
+		"rect" : [ 101.0, 292.0, 385.0, 302.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -65,7 +65,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 13.0, 317.0, 350.0, 102.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 279.0, 352.75, 101.0 ],
+					"presentation_rect" : [ 41.0, 186.0, 173.0, 101.0 ],
 					"varname" : "reverb",
 					"viewvisibility" : 1
 				}
@@ -121,7 +121,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 520.0, 187.0, 145.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 249.125, 225.0, 118.75, 33.0 ],
+					"presentation_rect" : [ 247.25, 237.0, 118.75, 35.0 ],
 					"style" : "",
 					"text" : "Load Composition",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -164,7 +164,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 408.0, 187.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 249.125, 182.0, 118.75, 33.0 ],
+					"presentation_rect" : [ 247.25, 197.0, 118.75, 35.0 ],
 					"style" : "",
 					"text" : "Set Composition",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -493,7 +493,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 227.0, 12.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 233.5, 110.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 231.625, 27.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Reference Distance",
 					"textjustification" : 1
@@ -516,7 +516,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 13.0, 46.0, 221.0, 263.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.0, 10.0, 221.0, 261.0 ],
+					"presentation_rect" : [ 17.0, 10.0, 221.0, 168.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -537,7 +537,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 256.0, 148.5, 115.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 10.0, 115.0, 61.0 ],
+					"presentation_rect" : [ 249.125, 91.5, 115.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -567,7 +567,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 261.0, 81.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 283.5, 137.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 281.625, 49.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -623,7 +623,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 387.0, 8.25, 106.0, 27.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 385.0, 389.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 385.0, 302.0 ],
 					"proportion" : 0.99,
 					"pt1" : [ 0.188119, 0.2 ],
 					"pt2" : [ 1.044554, 0.982609 ],
@@ -789,10 +789,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-26" : [ "size", "size", 0 ],
-			"obj-2::obj-30" : [ "diffusion", "diff", 0 ],
 			"obj-2::obj-33" : [ "level", "level", 0 ],
-			"obj-2::obj-29" : [ "dampening", "damp", 0 ]
+			"obj-2::obj-30" : [ "diffusion", "diff", 0 ],
+			"obj-2::obj-29" : [ "dampening", "damp", 0 ],
+			"obj-2::obj-26" : [ "size", "size", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -895,14 +895,6 @@
 			}
 , 			{
 				"name" : "hoa.in.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.3d.meter~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.2d.meter~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
