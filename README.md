@@ -26,6 +26,7 @@ There are 3 basic components needed to use MASI:
 2. Sound sources
 3. Compositions
 
+
 1. A "channel configuration" is a user-supplied list of azimuth/elevation coordinates specifying the speaker setup (this is unnecessary if using binaural rendering).  This should be created as a single-line `.txt` text file.  For example, a typical 4-channel setup (Lf, Rf, Ls, Rs) would read as follows (in degrees, 0&deg; is front, direction of rotation is counterclockwise):
 `45 0 315 0 135 0 225 0`.  Azimuth is between 0&deg; and 360&deg;, while elevation is between 90&deg; (directly above listener) and -90&deg; (directly below listener).  See the provided example channel configurations (under `misc/channelconfigs`) for more example configurations.
 
