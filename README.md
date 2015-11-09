@@ -21,10 +21,10 @@ MASI is licensed is under the terms of the [GNU Public License](http://www.gnu.o
 
 #### Components
 There are 3 basic components needed to use MASI:
+
 1. Channel configurations
 2. Sound sources
 3. Compositions
-
 
 1. A "channel configuration" is a user-supplied list of azimuth/elevation coordinates specifying the speaker setup (this is unnecessary if using binaural rendering).  This should be created as a single-line `.txt` text file.  For example, a typical 4-channel setup (Lf, Rf, Ls, Rs) would read as follows (in degrees, 0&deg; is front, direction of rotation is counterclockwise):
 `45 0 315 0 135 0 225 0`.  Azimuth is between 0&deg; and 360&deg;, while elevation is between 90&deg; (directly above listener) and -90&deg; (directly below listener).  See the provided example channel configurations (under `misc/channelconfigs`) for more example configurations.
@@ -42,15 +42,14 @@ There are 3 basic components needed to use MASI:
 It is also possible to have a single abstraction with multiple sources (outlets):
 ```JSON
 {
-    "source": ["uniqueName1", "uniqueName2", "uniqueName3", etc...]
+    "source": ["uniqueName1", "uniqueName2", "uniqueName3"]
 }
 ```
 Or multiple abstractions with any combination of single or multiple sources:
 ```JSON
 {
     "source1": "uniqueName",
-    "source2": ["uniqueName1", "uniqueName2"],
-    etc...
+    "source2": ["uniqueName1", "uniqueName2"]
 }
 ```
 
@@ -78,7 +77,7 @@ the single sound source can be moved by sending the OSC message `/uniqueName/pos
 
 MASI uses a left-handed coordinate system with vertical Y, as shown below:  
 
-![Alt text](http://zakberkowitz.com/images/left-handed-coordinates.svg)
+![Alt text](http://zakberkowitz.com/images/left-handed-coordinates.png)
 
 MASI treats a unit as 1 meter.  For example, a sound source at position `-5 0 0` will sound as though it is 5 meters to the left of a centered listener (achieved using a combination of ambisonic panning and acoustic principles such as amplitude scaling, delay, filtering, and reverb scaling).
 
