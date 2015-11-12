@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>MASI by zberkowitz</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/zberkowitz/MASI">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/zberkowitz/MASI/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/zberkowitz/MASI/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>MASI</h1>
+          <p>Multi-Source Ambisonic Spatialization Interface</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/zberkowitz">zberkowitz</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="multi-source-ambisonic-spatialization-interface-masi" class="anchor" href="#multi-source-ambisonic-spatialization-interface-masi" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multi-source Ambisonic Spatialization Interface (MASI)</h1>
+
+<h2>
+<a id="what-is-masi" class="anchor" href="#what-is-masi" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is MASI?</h2>
+
+<p>MASI is a series of patchers for <a href="https://cycling74.com/">Cycling '74's Max</a> that provide a simplified interface for the realistic spatial positioning of sound sources in a virtual 3D environment through <a href="https://en.wikipedia.org/wiki/Ambisonics">ambisonic</a> panning and virtual acoustics.  Because MASI uses ambisonic panning, the sounds can be decoded for playback on multichannel speaker arrays (e.g. 5.1, 7.1, octophonic, or any arbitrary array) or for binaural playback on headphones and standard stereo systems.</p>
+
+<p>MASI does not provide a graphical panning interface itself, but instead connects to other user-created graphical interfaces through <a href="http://opensoundcontrol.org/introduction-osc">Open Sound Control (OSC)</a> communication.  MASI is primarily intended to be used in conjunction with 3D game-like virtual world environments/interfaces.  Scripts are provided to connect MASI with the <a href="https://unity3d.com/">Unity</a> game engine.</p>
+
+<p>MASI is licensed is under the terms of the <a href="http://www.gnu.org/copyleft/gpl.html">GNU Public License</a>.</p>
+
+<h2>
+<a id="instructions" class="anchor" href="#instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instructions</h2>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<h4>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h4>
+
+<ul>
+<li>MASI uses CICM's <a href="http://www.mshparisnord.fr/hoalibrary/en/">HOA Library</a> (<a href="https://github.com/CICM/HoaLibrary-Max/">source</a>) (v. 2.2 or higher) for various ambisonic encoding and decoding tasks. Download the HOA Library for Max <a href="http://www.mshparisnord.fr/hoalibrary/en/downloads/max/">here</a> and place it in your Max Packages folder.</li>
+</ul>
+
+<h4>
+<a id="installation-instructions" class="anchor" href="#installation-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation Instructions</h4>
+
+<ul>
+<li>MASI is structured as a Max Package.  To install, <a href="https://github.com/zberkowitz/MASI/archive/master.zip">download the repository as a .zip</a>, de-compress, and place the folder in your Max Packages folder (in Max 7 this is located at <code>/Documents/Max 7/Packages</code> on both Mac and Windows).</li>
+</ul>
+
+<h3>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Use</h3>
+
+<h4>
+<a id="components" class="anchor" href="#components" aria-hidden="true"><span class="octicon octicon-link"></span></a>Components</h4>
+
+<p>There are 3 basic components needed to use MASI: channel configurations, sound sources, and compositions.</p>
+
+<ol>
+<li><p>A "channel configuration" is a user-supplied list of azimuth/elevation coordinates specifying the speaker setup (this is unnecessary if using binaural rendering).  This should be created as a single-line <code>.txt</code> text file.  For example, a typical 4-channel setup (Lf, Rf, Ls, Rs) would read as follows (in degrees, 0° is front, direction of rotation is counterclockwise):
+<code>45 0 315 0 135 0 225 0</code>.  Azimuth is between 0° and 360°, while elevation is between 90° (directly above listener) and -90° (directly below listener).  See the provided example channel configurations (under <code>misc/channelconfigs</code>) for more example configurations.</p></li>
+<li>
+<p>A "sound source" is a stream of audio in Max.  Sound sources are made available to MASI through outlets in Max abstractions.  A very simple example of a MASI sound source is the following patch, placed somewhere in the Max search path:</p>
+
+<p><img src="http://zakberkowitz.com/images/simplesource.png" alt="Alt text"></p>
+</li>
+<li><p>A "composition" is a user-supplied JSON file that contains key-value pairs denoting an abstraction with one or more sound sources (outlets) and a unique name for each source.  For example, if the simple patch shown above was saved as <code>source.maxpat</code> somewhere in the Max search path, and the single sound source it contained should be called <code>uniqueName</code>, then the JSON should read as follows:</p></li>
+</ol>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>source<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>uniqueName<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>It is also possible to have a single abstraction with multiple sources (outlets):</p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>source<span class="pl-pds">"</span></span>: [<span class="pl-s"><span class="pl-pds">"</span>uniqueName1<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>uniqueName2<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>uniqueName3<span class="pl-pds">"</span></span>]
+}</pre></div>
+
+<p>Or multiple abstractions with any combination of single or multiple sources:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>source1<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>uniqueName<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>source2<span class="pl-pds">"</span></span>: [<span class="pl-s"><span class="pl-pds">"</span>uniqueName1<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>uniqueName2<span class="pl-pds">"</span></span>]
+}</pre></div>
+
+<p>With these three components in mind, Open the MASI main patch, found in the Max <code>Extras</code> menu, and follow these steps:</p>
+
+<ol>
+<li>Set the decoding mode to <code>regular</code> (default) or <code>binaural</code>.</li>
+<li>Load the channel configuration (single-line <code>.txt</code> file).  This step is unnecessary if using binaural mode.</li>
+<li>Set the composition (JSON file).</li>
+<li>Load the composition (this final step loads the abstractions specified in the composition JSON file and connects their outlets to MASI).</li>
+</ol>
+
+<p><img src="http://zakberkowitz.com/images/masimain.png" alt="Alt text"></p>
+
+<h4>
+<a id="spatializing-sound-sources" class="anchor" href="#spatializing-sound-sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spatializing Sound Sources</h4>
+
+<h5>
+<a id="osc-communication" class="anchor" href="#osc-communication" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSC Communication</h5>
+
+<h6>
+<a id="moving-a-sound-source" class="anchor" href="#moving-a-sound-source" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moving a Sound Source</h6>
+
+<p>Once a composition has been loaded, the sound sources can be moved through space using OSC messages to address each source individually.  When open, MASI is receiving OSC at the local IP address on the port specified in the <code>OSC Receiver</code> portion of the main patch.  The address of each source is determined by the unique name assigned in the composition JSON file.  For example, given the following simple composition:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>source<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>uniqueName<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>the single sound source can be moved by sending the OSC message <code>/uniqueName/position X Y Z</code> to the receive port, where X Y and Z are coordinates in 3D space.  </p>
+
+<p>MASI uses a left-handed coordinate system with vertical Y, as shown below:  </p>
+
+<p><img src="http://zakberkowitz.com/images/left-handed-coordinates.png" alt="Alt text"></p>
+
+<p>MASI treats a unit as 1 meter.  For example, a sound source at position <code>-5 0 0</code> will sound as though it is 5 meters to the left of a centered listener (achieved using a combination of ambisonic panning and acoustic principles such as amplitude scaling, delay, filtering, and reverb scaling).</p>
+
+<h6>
+<a id="moving-the-listener" class="anchor" href="#moving-the-listener" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moving the Listener</h6>
+
+<p>Additionally, the position and rotation of the listener or "camera" in a first-person virtual world environment can be changed by sending the OSC messages <code>/position X Y Z</code> and <code>/rotation X Y Z</code></p>
+
+<h6>
+<a id="named-receives-and-enable" class="anchor" href="#named-receives-and-enable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Named Receives and Enable</h6>
+
+<p>Coming Soon.</p>
+
+<h4>
+<a id="using-unity" class="anchor" href="#using-unity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using Unity</h4>
+
+<p>One of the best use-cases for MASI is in conjunction with the Unity game engine and editor.  Two C# scripts for Unity are provided in the <code>misc/Unity</code> folder.  <code>ObjectOSC.cs</code> can be attached to any Unity game object and reports the position of the game object, while <code>CameraOSC.cs</code> can be attached to the main camera in a first-person setup and reports the position and rotation of the camera.  Unity games can be compiled for a variety of platforms, and Unity 5 enables easy integration with virtual reality HMDs such as the Oculus Rift.</p>
+
+<h5>
+<a id="dependencies-1" class="anchor" href="#dependencies-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h5>
+
+<p>The Unity C# scripts use Jorge Garcia's <a href="https://github.com/jorgegarcia/UnityOSC">UnityOSC</a>.  Download and follow the instructions for incorporating UnityOSC into your Unity project before attempting to use the MASI Unity scripts.  You will also need to follow the instructions for adding a new OSC Client to the <code>OSCHandler.cs</code> script.</p>
+
+<h5>
+<a id="camera-osc" class="anchor" href="#camera-osc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Camera OSC</h5>
+
+<p>The <code>CameraOSC.cs</code> script should be attached to the main camera in a first-person environment.  The easiest way to set this up is to use the <code>FPSController</code> prefab found in the Unity Standard Assets.  <code>CameraOSC.cs</code> should be added to the <code>FirstPersonCharacter</code> prefab (which is a child of <code>FPSController</code>).  You will need to set the public variable <code>OSC Client Name</code> to the name of the OSC Client created in <code>OSCHandler.cs</code> (<code>Max</code> in the following example).  The camera will now initialize the <code>OSC Handler</code> and report its position and rotation (<strong>Note</strong>: since this script handles initialization, if you are <strong>not</strong> using the <code>CameraOSC.cs</code> script then the <code>OSCHandler.Instance.Init()</code> method will need to be called elsewhere):</p>
+
+<p><img src="http://zakberkowitz.com/images/cameraosc.png" alt="Alt text"></p>
+
+<h5>
+<a id="object-osc" class="anchor" href="#object-osc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Object OSC</h5>
+
+<p>The <code>ObjectOSC.cs</code> script can be attached to any game object to report that game object's position when moved.  This script has two public variables, <code>Unique Name</code> and <code>OSC Client Name</code>.  If left blank, these variables will default to the name of the game object and the OSC Client specified by the Camera OSC script, respectively, but can be set differently if desired:</p>
+
+<p><img src="http://zakberkowitz.com/images/objectosc.png" alt="Alt text"></p>
+
+<p>The <code>Unique Name</code> corresponds to the unique name specified in the composition JSON.  Therefore, a Unity game object named <code>Cube</code> and a composition JSON such as:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>abstractionName<span class="pl-pds">"</span></span> : <span class="pl-s"><span class="pl-pds">"</span>Cube<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>will interact properly.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
