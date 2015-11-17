@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 0,
 			"revision" : 6,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 91.0, 574.0, 664.0, 460.0 ],
+		"rect" : [ 142.0, 133.0, 664.0, 460.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -659,8 +659,8 @@
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 9,
-					"numoutlets" : 9,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 25.613327, 147.5, 316.015869, 22.0 ],
 					"style" : "",
 					"text" : "hoa.3d.decoder~ 2",
@@ -1108,6 +1108,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 8 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 420.5, 144.0, 351.0, 144.0, 351.0, 81.0, 325.549338, 81.0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1403,8 +1413,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1413,8 +1423,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
