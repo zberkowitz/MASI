@@ -181,9 +181,10 @@
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"id" : "obj-2",
+					"ignoreclick" : 1,
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "masi.reverb.maxpat",
+					"name" : "masi.reverb~.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -574,8 +575,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -584,8 +585,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -630,11 +631,11 @@
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
-					"enablevscroll" : 0,
+					"enablevscroll" : 1,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "masi.decoder.maxpat",
+					"name" : "masi.decoder~.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -933,8 +934,8 @@
 		"parameters" : 		{
 			"obj-2::obj-33" : [ "level", "level", 0 ],
 			"obj-2::obj-29" : [ "dampening", "damp", 0 ],
-			"obj-2::obj-30" : [ "diffusion", "diff", 0 ],
-			"obj-2::obj-26" : [ "size", "size", 0 ]
+			"obj-2::obj-26" : [ "size", "size", 0 ],
+			"obj-2::obj-30" : [ "diffusion", "diff", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -944,7 +945,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "masi.decoder.maxpat",
+				"name" : "masi.decoder~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -962,7 +963,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "masi.reverb.maxpat",
+				"name" : "masi.reverb~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1106,8 +1107,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1116,8 +1117,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

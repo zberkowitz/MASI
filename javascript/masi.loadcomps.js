@@ -8,13 +8,13 @@ function loadComposition(){
 		var names = d.get(keys);
 		var source = p.newdefault(0, count * 60, keys);
 		if (typeof(names) == "string"){
-			var encoder = p.newdefault(0, count * 60 + 30, "masi.encoder", "@name", names);
+			var encoder = p.newdefault(0, count * 60 + 30, "masi.encoder~", "@name", names);
 			p.connect(source, 0, encoder, 0);
 		}
 		
 		else if (typeof(names) == "object"){
 			for (var j = 0; j < names.length; j++){
-				var encoder = p.newdefault(j * 175, count * 60 + 30, "masi.encoder", "@name", names[j]);
+				var encoder = p.newdefault(j * 175, count * 60 + 30, "masi.encoder~", "@name", names[j]);
 				p.connect(source, j, encoder, 0);
 			}
 		}
@@ -26,13 +26,13 @@ function loadComposition(){
 			var names = d.get(keys[i]);
 			var source = p.newdefault(0, count * 60, keys[i]);
 			if (typeof(names) == "string"){
-				var encoder = p.newdefault(0, count * 60 + 30, "masi.encoder", "@name", names);
+				var encoder = p.newdefault(0, count * 60 + 30, "masi.encoder~", "@name", names);
 				p.connect(source, 0, encoder, 0);
 			}
 		
 			else if (typeof(names) == "object"){
 				for (var j = 0; j < names.length; j++){
-					var encoder = p.newdefault(j * 175, count * 60 + 30, "masi.encoder", "@name", names[j]);
+					var encoder = p.newdefault(j * 175, count * 60 + 30, "masi.encoder~", "@name", names[j]);
 					p.connect(source, j, encoder, 0);
 				}
 			}
