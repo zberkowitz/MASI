@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 6,
-			"architecture" : "x64",
+			"revision" : 2,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -307,8 +307,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 6,
-							"architecture" : "x64",
+							"revision" : 2,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -575,8 +575,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -585,8 +585,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -631,7 +631,7 @@
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
-					"enablevscroll" : 1,
+					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -738,7 +738,7 @@
 			}
 , 			{
 				"box" : 				{
-					"angle" : 317.579012,
+					"angle" : 317.57901,
 					"grad1" : [ 0.803922, 0.898039, 0.909804, 1.0 ],
 					"grad2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"id" : "obj-31",
@@ -934,119 +934,132 @@
 		"parameters" : 		{
 			"obj-2::obj-33" : [ "level", "level", 0 ],
 			"obj-2::obj-29" : [ "dampening", "damp", 0 ],
-			"obj-2::obj-26" : [ "size", "size", 0 ],
-			"obj-2::obj-30" : [ "diffusion", "diff", 0 ]
+			"obj-2::obj-30" : [ "diffusion", "diff", 0 ],
+			"obj-2::obj-26" : [ "size", "size", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "masi.oscreceiver.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
+				"bootpath" : "~/Max 7/Packages/MASI/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.decoder~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
+				"bootpath" : "~/Max 7/Packages/MASI/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.receive~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/others",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.loadcomps.js",
-				"bootpath" : "~/Documents/Max 7/Packages/MASI/javascript",
+				"bootpath" : "~/Max 7/Packages/MASI/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.reverb~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
+				"bootpath" : "~/Max 7/Packages/MASI/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.fx.freeverb~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/effects",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.args.map.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/misc/others",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.mode.sel.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/misc/others",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.help.process.infos.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/helputility",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/helputility",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/helputility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.fx.gain~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/effects",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.list.sel.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/misc/others",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.send~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
+				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/others",
+				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.reverb.json",
-				"bootpath" : "~/Documents/Max 7/Packages/MASI/misc/presets",
+				"bootpath" : "~/Max 7/Packages/MASI/misc/presets",
+				"patcherrelativepath" : "../misc/presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hoa.3d.decoder~.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.3d.decoder~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "hoa.3d.optim~.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.3d.optim~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "hoa.process~.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.process~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "hoa.out~.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.out~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "hoa.thisprocess~.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.thisprocess~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "hoa.in.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.in.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "hoa.in~.mxo",
-				"type" : "iLaX"
+				"name" : "hoa.in~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "c.freeverb~.mxo",
-				"type" : "iLaX"
+				"name" : "c.freeverb~.mxe",
+				"type" : "iLaF"
 			}
  ],
 		"embedsnapshot" : 0,
@@ -1107,8 +1120,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1117,8 +1130,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
