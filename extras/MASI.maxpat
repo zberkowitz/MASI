@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 2,
-			"architecture" : "x86",
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 99.0, 190.0, 385.0, 298.0 ],
+		"rect" : [ 37.0, 66.0, 385.0, 298.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -181,7 +181,6 @@
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"id" : "obj-2",
-					"ignoreclick" : 1,
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "masi.reverb~.maxpat",
@@ -306,9 +305,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 2,
-							"architecture" : "x86",
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -932,137 +931,124 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-33" : [ "level", "level", 0 ],
 			"obj-2::obj-29" : [ "dampening", "damp", 0 ],
+			"obj-2::obj-26" : [ "size", "size", 0 ],
 			"obj-2::obj-30" : [ "diffusion", "diff", 0 ],
-			"obj-2::obj-26" : [ "size", "size", 0 ]
+			"obj-2::obj-33" : [ "level", "level", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "masi.oscreceiver.maxpat",
-				"bootpath" : "~/Max 7/Packages/MASI/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.decoder~.maxpat",
-				"bootpath" : "~/Max 7/Packages/MASI/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.receive~.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/others",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/others",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.loadcomps.js",
-				"bootpath" : "~/Max 7/Packages/MASI/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 7/Packages/MASI/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.reverb~.maxpat",
-				"bootpath" : "~/Max 7/Packages/MASI/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/MASI/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.fx.freeverb~.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/effects",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/effects",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.args.map.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/misc/others",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/misc/others",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.mode.sel.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/misc/others",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/misc/others",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.help.process.infos.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/helputility",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/helputility",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/helputility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.fx.gain~.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/effects",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/effects",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.list.sel.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/misc/others",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/misc/others",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/misc/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hoa.send~.maxpat",
-				"bootpath" : "~/Max 7/Packages/HoaLibrary-Win-v2.2/patchers/others",
-				"patcherrelativepath" : "../../HoaLibrary-Win-v2.2/patchers/others",
+				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "masi.reverb.json",
-				"bootpath" : "~/Max 7/Packages/MASI/misc/presets",
-				"patcherrelativepath" : "../misc/presets",
+				"bootpath" : "~/Documents/Max 7/Packages/MASI/misc/presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hoa.3d.decoder~.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.3d.decoder~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "hoa.3d.optim~.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.3d.optim~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "hoa.process~.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.process~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "hoa.out~.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.out~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "hoa.thisprocess~.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.thisprocess~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "hoa.in.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.in.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "hoa.in~.mxe",
-				"type" : "iLaF"
+				"name" : "hoa.in~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "c.freeverb~.mxe",
-				"type" : "iLaF"
+				"name" : "c.freeverb~.mxo",
+				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
