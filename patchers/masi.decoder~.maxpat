@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 142.0, 133.0, 664.0, 460.0 ],
+		"rect" : [ 94.0, 101.0, 221.0, 168.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 69.613327, 444.5, 83.0, 20.0 ],
+					"style" : "",
+					"text" : "pcontrol inlet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-4",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 29.613327, 444.5, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
@@ -382,7 +407,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 59.613327, 329.5, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.5, 83.0, 96.0, 20.0 ],
+					"presentation_rect" : [ 103.375, 81.0, 96.0, 20.0 ],
 					"style" : "",
 					"text" : "# of channels",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -491,7 +516,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 361.5, 257.5, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 85.5, 105.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 127.25, 103.0, 50.0, 22.0 ],
 					"style" : "",
 					"triscale" : 0.0
 				}
@@ -659,8 +684,8 @@
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 9,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "signal", "signal", "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 25.613327, 147.5, 316.015869, 22.0 ],
 					"style" : "",
 					"text" : "hoa.3d.decoder~ 2",
@@ -756,24 +781,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-12", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-12", 2 ]
 				}
 
 			}
@@ -1324,38 +1331,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "hoa.receive~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/HoaLibrary-Mac-v2.2/patchers/others",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hoa.3d.decoder~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.3d.optim~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.process~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.out~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.thisprocess~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "hoa.in.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"embedsnapshot" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
