@@ -80,8 +80,21 @@ MASI treats a unit as 1 meter.  For example, a sound source at position `-5 0 0`
 ###### Moving the Listener
 Additionally, the position and rotation of the listener or "camera" in a first-person virtual world environment can be changed by sending the OSC messages `/position X Y Z` and `/rotation X Y Z`
 
-###### Named Receives and Enable
-Coming Soon.
+###### Named Receives
+An additional feature of MASI is the ability to access information within user-created patches via a system of uniquely named sends and receives.  When a composition is loaded, the following sends are created for each sound source (where `uniqueName` is the name assigned to the source in the composition JSON):
+
+`uniqueNameAzimuth`
+`uniqueNameElevation`
+`uniqueNameDistance`
+`userPosition`
+`cameraRotation`
+`uniqueNameEnable`
+`uniqueNameCollision`
+
+For example, the object `receive uniqueNameDistance` in any patch will provide the distance between the user and the object.  `uniqueNameAzimuth` and `uniqueNameElevation` will provide the azimuth and elevation of the object as provided to the ambisonic decoder.  `userPosition` and `cameraRotation` will provide the position of the user in the scene and the rotation of the camera (head) respectively.
+
+When using the Unity scripts (described in the next section) a few additional receives are provided.  `uniqueNameEnable` receives a 1 when an object with the `ObjectOSC` script is enabled in the scene.  `uniqueNameCollision` will receive the name of the object that an object with the `ObjectOSC` script collided with as well as the initial magnitude of the collision.      
+
 
 #### Using Unity
 One of the best use-cases for MASI is in conjunction with the Unity game engine and editor.  Two C# scripts for Unity are provided in the `misc/Unity` folder.  `ObjectOSC.cs` can be attached to any Unity game object and reports the position of the game object, while `CameraOSC.cs` can be attached to the main camera in a first-person setup and reports the position and rotation of the camera.  Unity games can be compiled for a variety of platforms, and Unity 5 enables easy integration with virtual reality HMDs such as the Oculus Rift.
