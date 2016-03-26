@@ -90,10 +90,13 @@ An additional feature of MASI is the ability to access information within user-c
 `cameraRotation`
 `uniqueNameEnable`
 `uniqueNameCollision`
+`OSCDump`
 
 For example, the object `receive uniqueNameDistance` in any patch will provide the distance between the user and the object.  `uniqueNameAzimuth` and `uniqueNameElevation` will provide the azimuth and elevation of the object as provided to the ambisonic decoder.  `userPosition` and `cameraRotation` will provide the position of the user in the scene and the rotation of the camera (head) respectively.
 
-When using the Unity scripts (described in the next section) a few additional receives are provided.  `uniqueNameEnable` receives a 1 when an object with the `ObjectOSC` script is enabled in the scene.  `uniqueNameCollision` will receive the name of the object that an object with the `ObjectOSC` script collided with as well as the initial magnitude of the collision.      
+When using the Unity scripts (described in the next section) a few additional receives are provided.  `uniqueNameEnable` receives a 1 when an object with the `ObjectOSC` script is enabled in the scene.  `uniqueNameCollision` will receive the name of the object that an object with the `ObjectOSC` script collided with as well as the initial magnitude of the collision.
+
+Additionally, `OSCDump` will receive all incoming OSC messages, which can be parsed using standard methods within Max such as the `route` object.      
 
 
 #### Using Unity
