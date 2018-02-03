@@ -27,7 +27,7 @@ There are 3 basic components needed to use MASI: channel configurations, sound s
 
 2. A "sound source" is a stream of audio in Max.  Sound sources are made available to MASI through outlets in Max abstractions.  A very simple example of a MASI sound source is the following patch, placed somewhere in the Max search path:
 
-    ![Alt text](http://zakberkowitz.com/images/simplesource.png)
+    ![Alt text](http://zberkowitz.github.io/MASI/images/simplesource.png)
 
 3. A "composition" is a user-supplied JSON file that contains key-value pairs denoting an abstraction with one or more sound sources (outlets) and a unique name for each source.  For example, if the simple patch shown above was saved as `source.maxpat` somewhere in the Max search path, and the single sound source it contained should be called `uniqueName`, then the JSON should read as follows:
 ```JSON
@@ -56,7 +56,7 @@ With these three components in mind, Open the MASI main patch, found in the Max 
 3. Set the composition (JSON file).
 4. Load the composition (this final step loads the abstractions specified in the composition JSON file and connects their outlets to MASI).
 
-![Alt text](http://zakberkowitz.com/images/masimain.png)
+![Alt text](http://zberkowitz.github.io/MASI/images/masimain.png)
 
 #### Spatializing Sound Sources
 
@@ -73,7 +73,7 @@ the single sound source can be moved by sending the OSC message `/uniqueName/pos
 
 MASI uses a left-handed coordinate system with vertical Y, as shown below:  
 
-![Alt text](http://zakberkowitz.com/images/left-handed-coordinates.png)
+![Alt text](http://zberkowitz.github.io/MASI/images/left-handed-coordinates.png)
 
 MASI treats a unit as 1 meter.  For example, a sound source at position `-5 0 0` will sound as though it is 5 meters to the left of a centered listener (achieved using a combination of ambisonic panning and acoustic principles such as amplitude scaling, delay, filtering, and reverb scaling).
 
@@ -108,12 +108,12 @@ The Unity C# scripts use Jorge Garcia's [UnityOSC](https://github.com/jorgegarci
 ##### Camera OSC
 The `CameraOSC.cs` script should be attached to the main camera in a first-person environment.  The easiest way to set this up is to use the `FPSController` prefab found in the Unity Standard Assets.  `CameraOSC.cs` should be added to the `FirstPersonCharacter` prefab (which is a child of `FPSController`).  You will need to set the public variable `OSC Client Name` to the name of the OSC Client created in `OSCHandler.cs` (`Max` in the following example).  The camera will now initialize the `OSC Handler` and report its position and rotation (**Note**: since this script handles initialization, if you are **not** using the `CameraOSC.cs` script then the `OSCHandler.Instance.Init()` method will need to be called elsewhere):
 
-![Alt text](http://zakberkowitz.com/images/cameraosc.png)
+![Alt text](http://zberkowitz.github.io/MASI/images/cameraosc.png)
 
 ##### Object OSC
 The `ObjectOSC.cs` script can be attached to any game object to report that game object's position when moved.  This script has two public variables, `Unique Name` and `OSC Client Name`.  If left blank, these variables will default to the name of the game object and the OSC Client specified by the Camera OSC script, respectively, but can be set differently if desired:
 
-![Alt text](http://zakberkowitz.com/images/objectosc.png)
+![Alt text](http://zberkowitz.github.io/MASI/images/objectosc.png)
 
 The `Unique Name` corresponds to the unique name specified in the composition JSON.  Therefore, a Unity game object named `Cube` and a composition JSON such as:
 ```JSON
